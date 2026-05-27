@@ -1,4 +1,4 @@
-.card:hover {
+.card:hover { 
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 0 25px rgba(255,79,216,0.3);
 }
