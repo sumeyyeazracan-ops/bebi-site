@@ -1,4 +1,4 @@
 function enterWorld() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("world").style.display = "block";
+  document.getElementById("home").classList.add("hidden");
+  document.getElementById("world").classList.remove("hidden");
 }
