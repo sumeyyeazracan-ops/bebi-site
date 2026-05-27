@@ -1,5 +1,3 @@
-console.log("BEBI site çalışıyor 🚀");
-
-document.addEventListener("DOMContentLoaded", () => {
-    alert("BEBI siteye hoş geldin ✨");
-});
+function showMessage() {
+    alert("BEBI dünyasına hoş geldin ✨💖");
+}
