@@ -1,16 +1,42 @@
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+.hero {
+  margin-top: 60px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
 .card {
   background: rgba(255,255,255,0.05);
-  padding: 20px;
-  border-radius: 20px;
   backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 18px;
+  min-width: 120px;
   transition: 0.3s;
 }
 
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255,79,216,0.3);
+}
+
 button {
+  margin-top: 15px;
   padding: 12px 24px;
   border: none;
   border-radius: 14px;
+
   background: linear-gradient(45deg, #ff4fd8, #7c5cff);
   color: white;
+
   cursor: pointer;
 }
