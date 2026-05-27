@@ -1,1 +1,16 @@
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+}
 
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(45deg, #ff4fd8, #7c5cff);
+  color: white;
+  cursor: pointer;
+}
