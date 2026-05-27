@@ -1,14 +1,80 @@
+/* ===== BASE ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-
   background: #0f0f1a;
   color: white;
-
-  min-height: 100vh;
 }
 
+/* center system */
 .container {
   text-align: center;
   padding: 40px;
+}
+
+/* hide class */
+.hidden {
+  display: none;
+}
+
+/* ===== HERO ===== */
+.hero {
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+/* ===== CARDS ===== */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+/* hover effect */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255,79,216,0.3);
+}
+
+/* ===== BUTTON ===== */
+button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+
+  background: linear-gradient(45deg, #ff4fd8, #7c5cff);
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* ===== BACKGROUND GLOW ===== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: radial-gradient(circle at 20% 20%, #ff4fd8, transparent 40%),
+              radial-gradient(circle at 80% 80%, #7c5cff, transparent 40%);
+
+  opacity: 0.15;
+  z-index: -1;
 }
