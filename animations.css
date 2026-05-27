@@ -1,1 +1,13 @@
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 25px rgba(255,79,216,0.3);
+}
 
+button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes floatGlow {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
