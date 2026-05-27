@@ -1,3 +1,3 @@
-function showMessage() {
-    alert("BEBI dünyasına hoş geldin ✨💖");
+function enter() {
+  alert("Soft World activated ✨");
 }
